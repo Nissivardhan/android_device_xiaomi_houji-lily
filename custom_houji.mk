@@ -8,15 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixel OS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Inherit from houji device.
 $(call inherit-product, device/xiaomi/houji/device.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := houji
-PRODUCT_NAME := lineage_houji
+PRODUCT_NAME := custom_houji
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 23127PN0CG
 PRODUCT_MANUFACTURER := xiaomi
@@ -28,3 +28,4 @@ BUILD_FINGERPRINT := Xiaomi/houji/houji:15/AQ3A.240627.003/OS2.0.201.0.VNCMIXM:u
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
