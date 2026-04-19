@@ -28,3 +28,42 @@ BUILD_FINGERPRINT := Xiaomi/houji/houji:15/AQ3A.240627.003/OS2.0.201.0.VNCMIXM:u
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+## Lunaris flags
+
+# ---------------------------
+# Core Groups
+# ---------------------------
+LUNARIS_CPU_SMALL_CORES := 0,1,2,3
+LUNARIS_CPU_BIG_CORES   := 4,5,6
+LUNARIS_CPU_PRIME_CORE  := 7
+LUNARIS_ALL_CORES       := 0-7
+
+# ---------------------------
+# Background Tasks
+# ---------------------------
+LUNARIS_CPU_BG          := 0-1
+LUNARIS_CPU_LIMIT_BG    := 0-1
+
+# ---------------------------
+# Foreground / UI Tasks
+# ---------------------------
+LUNARIS_CPU_FG          := 0-3,5
+LUNARIS_CPU_LIMIT_UI    := 0-3
+
+# ---------------------------
+# Display / Animation
+# ---------------------------
+LUNARIS_CPU_DISPLAY     := 0-3,4
+
+# Enable optimized dexopt tuning
+TARGET_OPTIMIZED_DEXOPT := true
+
+# GMS CORE
+TARGET_USES_CORE_GAPPS := true
+
+# Ship BCR
+WITH_BCR := true
+
+# UDFPS
+TARGET_CUSTOM_UDFPS := true
