@@ -35,3 +35,9 @@ PRODUCT_PACKAGES += \
     HoujiEuiccOverlay \
     SettingsOverlayHouji \
     SystemUIResHouji
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/houji-miuicamera/device.mk)
+
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
