@@ -255,4 +255,10 @@
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
 
+
+    <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+
+    <!-- Default value for fp screen off unlock toggle -->
+    <bool name="config_screen_off_udfps_default_on">true</bool>
 </resources>
