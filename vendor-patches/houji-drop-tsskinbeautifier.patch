@@ -1,0 +1,63 @@
+diff --git a/Android.bp b/Android.bp
+index 612f8df..5acc022 100644
+--- a/Android.bp
++++ b/Android.bp
+@@ -2739,46 +2739,6 @@ cc_prebuilt_library_shared {
+     device_specific: true,
+ }
+ 
+-cc_prebuilt_library_shared {
+-    name: "com.mi.node.tsskinbeautifier",
+-    owner: "xiaomi",
+-    strip: {
+-        none: true,
+-    },
+-    target: {
+-        android_arm64: {
+-            srcs: [
+-                "proprietary/odm/lib64/camera/components/com.mi.node.tsskinbeautifier.so",
+-            ],
+-            shared_libs: [
+-                "libcamera_metadata",
+-                "libcom.qti.chinodeutils",
+-                "libsync",
+-                "libchilog",
+-                "libTrueSight",
+-                "libutils",
+-                "libcutils",
+-                "libui",
+-                "libnativewindow",
+-                "libEGL",
+-                "libGLESv2",
+-                "libGLESv3",
+-                "libcamxcommonutils",
+-                "libcamximageformatutils",
+-                "liblog",
+-                "libc++",
+-                "libc",
+-                "libm",
+-                "libdl",
+-            ],
+-        },
+-    },
+-    compile_multilib: "64",
+-    relative_install_path: "camera/components",
+-    prefer: true,
+-    device_specific: true,
+-}
+-
+ cc_prebuilt_library_shared {
+     name: "com.mi.node.videobokeh",
+     owner: "xiaomi",
+diff --git a/houji-vendor.mk b/houji-vendor.mk
+index 3c8cbc0..6aa3db6 100644
+--- a/houji-vendor.mk
++++ b/houji-vendor.mk
+@@ -1213,7 +1213,6 @@ PRODUCT_PACKAGES += \
+     com.mi.node.rearvideo \
+     com.mi.node.singlebokeh \
+     com.mi.node.skinbeautifier \
+-    com.mi.node.tsskinbeautifier \
+     com.mi.node.videobokeh \
+     com.mi.node.videofilter \
+     com.mi.node.videonight \
