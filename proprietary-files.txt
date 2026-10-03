@@ -971,7 +971,6 @@ odm/lib64/camera/components/com.mi.node.realtimebokeh.so
 odm/lib64/camera/components/com.mi.node.rearvideo.so
 odm/lib64/camera/components/com.mi.node.singlebokeh.so
 odm/lib64/camera/components/com.mi.node.skinbeautifier.so
-odm/lib64/camera/components/com.mi.node.tsskinbeautifier.so
 odm/lib64/camera/components/com.mi.node.videobokeh.so
 odm/lib64/camera/components/com.mi.node.videofilter.so
 odm/lib64/camera/components/com.mi.node.videonight.so
