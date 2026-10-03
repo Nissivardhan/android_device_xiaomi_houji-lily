@@ -35,3 +35,5 @@ PRODUCT_PACKAGES += \
     HoujiEuiccOverlay \
     SettingsOverlayHouji \
     SystemUIResHouji
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/houji-miuicamera/device.mk)

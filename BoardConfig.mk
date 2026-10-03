@@ -50,3 +50,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Inherit from the proprietary version
 include vendor/xiaomi/houji/BoardConfigVendor.mk
+
+# MiuiCamera
+-include device/xiaomi/houji-miuicamera/BoardConfig.mk
