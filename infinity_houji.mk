@@ -9,14 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from houji device.
 $(call inherit-product, device/xiaomi/houji/device.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := houji
-PRODUCT_NAME := lineage_houji
+PRODUCT_NAME := infinity_houji
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 23127PN0CG
 PRODUCT_MANUFACTURER := xiaomi
@@ -28,3 +28,20 @@ BUILD_FINGERPRINT := Xiaomi/houji/houji:16/BP2A.250605.031.A3/OS3.0.301.0.WNCMIX
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Infinity-X Flags
+
+# Whether the package includes System BLURS
+TARGET_SUPPORTS_BLUR := true
+
+# UDFPS
+TARGET_HAS_UDFPS := true
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Whether the compiled package ships Google Apps:
+WITH_GAPPS := true
+
+# Maintainer Name
+INFINITY_MAINTAINER := Nissi-vardhan
