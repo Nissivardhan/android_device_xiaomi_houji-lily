@@ -6,3 +6,6 @@ Apply from the ROM source root:
     # Google SIM Manager gms build (presigned + preprocessed), apply in order:
     git -C vendor/xiaomi/houji apply $(pwd)/device/xiaomi/houji/vendor-patches/houji-euiccgoogle-gms-1-apk.patch
     git -C vendor/xiaomi/houji apply $(pwd)/device/xiaomi/houji/vendor-patches/houji-euiccgoogle-gms-2-preprocessed.patch
+
+    # houji in the Euicc SIM slot mappings (EuiccGoogle needs it):
+    git -C hardware/xiaomi apply $(pwd)/device/xiaomi/houji/vendor-patches/hardware-xiaomi-euicc-houji.patch

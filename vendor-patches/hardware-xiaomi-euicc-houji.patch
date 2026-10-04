@@ -1,0 +1,32 @@
+From 3bd98aeb9b62a6d77867c5418f2b74634463d2f2 Mon Sep 17 00:00:00 2001
+From: Nissi vardhan <nissivardhan@users.noreply.github.com>
+Date: Sun, 4 Oct 2026 00:33:52 +0000
+Subject: [PATCH] Euicc: add houji to SIM slot mappings (eSIM on slot 1)
+
+---
+ packages/Euicc/res/values/strings.xml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/packages/Euicc/res/values/strings.xml b/packages/Euicc/res/values/strings.xml
+index 5371098..6ba5a9b 100644
+--- a/packages/Euicc/res/values/strings.xml
++++ b/packages/Euicc/res/values/strings.xml
+@@ -13,6 +13,7 @@
+                         \"diting\",
+                         \"fuxi\",
+                         \"garnet\",
++                        \"houji\",
+                         \"nuwa\",
+                         \"ziyi\"
+                     ],
+@@ -35,6 +36,7 @@
+                         \"diting\",
+                         \"fuxi\",
+                         \"garnet\",
++                        \"houji\",
+                         \"nuwa\",
+                         \"ziyi\"
+                     ],
+-- 
+2.43.0
+
