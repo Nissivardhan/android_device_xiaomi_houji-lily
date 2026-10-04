@@ -36,3 +36,7 @@ PRODUCT_PACKAGES += \
     SystemUIResHouji
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/houji-miuicamera/device.mk)
+
+# Remove packages (super partition headroom)
+PRODUCT_PACKAGES += \
+    RemovePackages
