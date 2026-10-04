@@ -2,3 +2,7 @@ Patches for the vendor blob repo that this tree expects.
 Apply from the ROM source root:
 
     git -C vendor/xiaomi/houji apply $(pwd)/device/xiaomi/houji/vendor-patches/houji-drop-tsskinbeautifier.patch
+
+    # Google SIM Manager gms build (presigned + preprocessed), apply in order:
+    git -C vendor/xiaomi/houji apply $(pwd)/device/xiaomi/houji/vendor-patches/houji-euiccgoogle-gms-1-apk.patch
+    git -C vendor/xiaomi/houji apply $(pwd)/device/xiaomi/houji/vendor-patches/houji-euiccgoogle-gms-2-preprocessed.patch
