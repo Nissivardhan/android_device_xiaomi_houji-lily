@@ -5,7 +5,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">24.0px</dimen>
+    <dimen name="status_bar_padding_top">28.0px</dimen>
+
+    <!-- the padding on the bottom of the statusbar -->
+    <dimen name="status_bar_padding_bottom">18.0px</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">4dp</dimen>
@@ -17,7 +20,7 @@
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
 
     <!-- Adjust the icon padding in status bar for rounded corners. -->
-    <dimen name="rounded_corner_content_padding">67.0px</dimen>
+    <dimen name="rounded_corner_content_padding">68.0px</dimen>
 
     <!-- Distance of the keyguard indication (e.g. charging) from the bottom. The AOD burn-in
          shift moves it up to 15dp further down, so keep it clear of the curved bottom edge -->
