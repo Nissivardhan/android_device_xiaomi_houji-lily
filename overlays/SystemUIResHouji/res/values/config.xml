@@ -41,7 +41,8 @@
 
     <!-- Whether devices supports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
-    <!-- Doze: the display supports DOZE / DOZE_SUSPEND, so the CPU can sleep during AOD -->
+    <!-- Doze: use DOZE for AOD so the CPU can sleep. Not DOZE_SUSPEND: the panel does
+         not take new frames there, so the AOD clock stops updating -->
     <bool name="doze_display_state_supported">true</bool>
-    <bool name="doze_suspend_display_state_supported">true</bool>
+    <bool name="doze_suspend_display_state_supported">false</bool>
 </resources>
