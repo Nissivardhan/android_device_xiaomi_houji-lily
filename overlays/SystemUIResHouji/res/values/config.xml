@@ -42,6 +42,13 @@
 
     <!-- Whether devices supports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
+    <!-- Proximity: use the sensor hub's pocket detection. The under-display proximity sensor
+         alone often stays "near" with the display off, so the AOD did not come back -->
+    <string name="proximity_sensor_type" translatable="false">xiaomi.sensor.oem_pocket</string>
+
+    <!-- A proximity_sensor_type value below this is considered "near" -->
+    <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">5</item>
+
     <!-- Doze: use DOZE for AOD so the CPU can sleep. Not DOZE_SUSPEND: the panel does
          not take new frames there, so the AOD clock stops updating -->
     <bool name="doze_display_state_supported">true</bool>
