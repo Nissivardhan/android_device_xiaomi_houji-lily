@@ -21,18 +21,6 @@ index 6bb9243..bd06b3f 100644
      dex_preopt: {
          enabled: false,
      },
-diff --git a/houji-vendor.mk b/houji-vendor.mk
-index 3c8cbc0..6aa3db6 100644
---- a/houji-vendor.mk
-+++ b/houji-vendor.mk
-@@ -1213,7 +1213,6 @@ PRODUCT_PACKAGES += \
-     com.mi.node.rearvideo \
-     com.mi.node.singlebokeh \
-     com.mi.node.skinbeautifier \
--    com.mi.node.tsskinbeautifier \
-     com.mi.node.videobokeh \
-     com.mi.node.videofilter \
-     com.mi.node.videonight \
 -- 
 2.43.0
 
