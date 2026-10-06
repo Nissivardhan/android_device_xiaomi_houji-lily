@@ -4,12 +4,13 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">28.0px</dimen>
+    <!-- the padding on the top of the statusbar. Stock uses 28px, but status bar content (and
+         the dynamic island pill) is centred between this padding and the 134px bar height, so
+         11px puts the centre at 72.5px, on the camera (72.4px) -->
+    <dimen name="status_bar_padding_top">11.0px</dimen>
 
-    <!-- the padding on the bottom of the statusbar. Stock uses 18px; 32px centres the
-         dynamic island pill on the camera (the pill centres between the paddings) -->
-    <dimen name="status_bar_padding_bottom">32.0px</dimen>
+    <!-- the padding on the bottom of the statusbar -->
+    <dimen name="status_bar_padding_bottom">18.0px</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">4dp</dimen>
